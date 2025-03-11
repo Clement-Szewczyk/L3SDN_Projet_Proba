@@ -1,80 +1,78 @@
-Analyse des Interventions des Services d'Incendie et de Secours
+## Analyse des Interventions des Services d'Incendie et de Secours
 
-Description du Projet
+**Description du Projet**
 
 Ce projet vise à analyser les interventions réalisées par les services d'incendie et de secours en France en 2022. En utilisant des méthodes statistiques et des outils de data science, nous avons étudié les tendances, les facteurs influençant les interventions et les zones géographiques les plus concernées.
 
-Objectifs
+**Objectifs**
 
-Analyser les tendances des interventions en fonction du type d'urgence.
+- Analyser les tendances des interventions en fonction du type d'urgence.
 
-Étudier les facteurs influençant ces interventions (zones géographiques, conditions climatiques, densité de population, etc.).
+- Étudier les facteurs influençant ces interventions (zones géographiques, conditions climatiques, densité de population, etc.).
 
-Vérifier plusieurs hypothèses concernant la fréquence et la localisation des interventions.
+- Vérifier plusieurs hypothèses concernant la fréquence et la localisation des interventions.
 
-Créer des visualisations interactives pour mieux représenter les données.
+- Créer des visualisations interactives pour mieux représenter les données.
 
-Données Utilisées
+**Données Utilisées**
 
-Source : data.gouv.fr
+- Source : data.gouv.fr
 
-99 lignes et 71 colonnes recensant les interventions.
+    - 99 lignes et 71 colonnes recensant les interventions.
 
-Variables clés :
+**Variables clés :**
 
-Temporelles : année d’intervention.
+- Temporelles : année d’intervention.
 
-Géographiques : zone, région, département.
+- Géographiques : zone, région, département.
 
-Types d’intervention : incendies, accidents, secours à personnes, inondations, etc.
+- Types d’intervention : incendies, accidents, secours à personnes, inondations, etc.
 
-Détails spécifiques : nombre total d’interventions.
+- Détails spécifiques : nombre total d’interventions.
 
-Structure du Projet
+**Structure du Projet**
 
-/
-|-- data/                # Contient les fichiers de données
-|-- notebooks/           # Jupyter Notebooks avec l'analyse
-|   |-- Projet.ipynb     # Notebook principal
-|-- reports/             # Contient le rapport du projet
-|   |-- Rapport.pdf      # Rapport détaillé du projet
-|-- scripts/             # Scripts Python pour l'analyse
-|-- README.md            # Documentation du projet
-|-- STIEVENARD_SZEWCZYK.zip # Livrable final du projet
+- data
+    - data2022.csv  : dataset sur lequel on travaille
+- Projet.ipynb      : Notebook principal contenant notre analyse  
+- README.md         : Documentation du projet
 
-Instructions d'Installation
 
-Cloner le projet
+**Instructions d'Installation**
 
+- Cloner le projet
+```bash
 git clone https://github.com/votre-utilisateur/projet-incendie.git
 cd projet-incendie
+```
 
 Installer les dépendances
-
+```bash
 pip install -r requirements.txt
+```
 
 Lancer le Notebook Jupyter
 
 jupyter notebook notebooks/Projet.ipynb
 
-Résultats Clés
+**Résultats Clés**
 
-Les secours à personne et secours à victime sont les interventions les plus fréquentes.
+- Les secours à personne et secours à victime sont les interventions les plus fréquentes.
 
-Les zones les plus concernées sont l'Île-de-France, l'Auvergne-Rhône-Alpes et Provence-Alpes-Côte d'Azur.
+- Les zones les plus concernées sont l'Île-de-France, l'Auvergne-Rhône-Alpes et Provence-Alpes-Côte d'Azur.
 
-Hypothèses validées :
+**Hypothèses validées :**
 
-Plus d'incendies dans le Sud en raison du climat.
+- Plus d'incendies dans le Sud en raison du climat.
 
-Plus de pollution en Île-de-France comparée à la Franche-Comté.
+- Plus de pollution en Île-de-France comparée à la Franche-Comté.
 
-Hypothèses réfutées :
+**Hypothèses réfutées :**
 
-Pas de différences significatives entre les inondations en Hauts-de-France et en Bretagne.
+- Pas de différences significatives entre les inondations en Hauts-de-France et en Bretagne.
 
-Les secours en montagne sont beaucoup plus nombreux en Auvergne-Rhône-Alpes qu'en Corse.
+- Les secours en montagne sont beaucoup plus nombreux en Auvergne-Rhône-Alpes qu'en Corse.
 
-Contributions
+**Contributions**
 
 Projet réalisé par Emma Stievenard et Clément Szewczyk dans le cadre du cours de Probabilités et Statistiques.
